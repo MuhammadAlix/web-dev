@@ -13,10 +13,38 @@ p{
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     line-height: 1.6em;
-    color: darkslategrey;
-    background-color: rgb(224, 224, 224);
-    padding: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 43, 43);
+    /* padding: 50px; */
+    /* padding-top: 30px;    
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 30px;     */
+    padding: 50px 25px;
+    margin-top: 50px; 
+    width: 720px;
 }
+
+/* #firstpara{
+     height: 1850px;
+    width: 720px; 
+    border: 5px solid red;
+
+} */
+
+#para{
+    /* height: 720px; */
+    border: 3px solid purple;
+    /* border-radius: 5px; */
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px ;    
+    border-bottom-left-radius: 15px ;   
+    background-image: url(Image.jpg);
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-blend-mode: exclusion;
+}
+
 span{
     font-style: italic;
     font-weight: bold;
