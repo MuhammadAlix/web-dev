@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+        .item{
+            background-color: burlywood;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Call
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sapiente, quisquam quod minus ut inventore cumque aperiam quam, qui accusantium nihil eos illum enim amet. Assumenda error modi sunt illum sapiente quos?</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nam voluptas et quis architecto harum qui eligendi quam, repellendus sequi quod quidem esse fugiat aliquid! Consequatur facilis tenetur alias dolorem ex adipisci.</div>
+        <div id="footer" class="item">This is a very good footer</div>
+    </div>
+</body>
+</html>
