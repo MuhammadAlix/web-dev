@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeOut ClearTimeOut SetInterval</title>
+</head>
+<body>
+    This is a good File
+    <div id="time"></div>
+</body>
+<script>
+    console.log("This is a good day")
+    function greet(name, byetext){
+        console.log("Hello Good Morning ", name, " ", byetext);
+    }
+    timeout = setTimeout(greet, 5000,"Ali","Take Care");
+    console.log(timeout);
+    clearTimeout(timeout);
+
+    interval = setInterval(greet, 2000, "Ali","Have a good day")
+    console.log(interval);
+    clearInterval(interval);
+
+    function displayTime() {
+        let time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+        
+    }
+    setInterval (displayTime, 1000)
+</script>
+</html>
